@@ -1,0 +1,172 @@
+:root {
+    --color-primary: #1a1a2e;
+    --color-accent: #00d4aa;
+    --color-background:#f5f5f5;
+    --color-text: #1a1a1a;
+    --color-white: #ffffff;
+    --color-danger:#bd201b;
+    --font-accent:Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#inputBudget::-webkit-inner-spin-button,
+#inputBudget::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+body{
+display: flex;
+margin:0 auto;
+padding: 1.5rem 1rem;
+max-width: 480px;
+align-items: center;
+flex-direction: column;
+background: var(--color-background);
+color: var(--color-accent);
+
+}
+
+#transaction-notification {
+display:none;
+position: fixed;
+bottom:10px;
+left:50%;
+transform:translateX(-50%);
+background:var(--color-accent);
+padding: 10px 20px;
+border-radius: 8px;
+color:var(--color-white)
+}
+
+#current-budget-section {
+display:flex;
+flex-direction: column;
+align-items:center;
+margin-bottom: 1.5rem;
+width: 100%;
+max-width: 400px;
+padding:2rem;
+background: var(--color-primary);
+color: var(--color-white);
+border-radius: 1.5rem;
+text-align: center;
+
+}
+#current-budget-section h3{
+    font-size: 1.25rem;
+}
+#daily-budget{
+    font-size: 2.75rem;
+    color: var(--color-accent);
+    font-family:var(--font-accent);
+}
+#account-dashboard{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+}
+.account-card{
+    display: flex;
+    flex-direction: column;
+    padding:.75rem;
+    background: var(--color-white);
+    color: var(--color-text);
+    border-radius: 1rem;
+    min-width: 100px;
+    margin: .25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+button{
+    display: flex;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-radius: .5rem;
+    padding: .5rem;
+border:none;
+margin: .1rem;
+cursor: pointer;
+}
+#reset-daily-budget, #reset-all-budget{
+background:var(--color-danger);
+
+}
+
+#inputBudget{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    border: none ;
+    border-radius: .5rem;
+    border-bottom:2px solid var(--color-accent);
+    color:var(--color-primary);
+    outline:none;
+}
+
+#button-section{
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .5rem;
+  outline: none;
+padding:2rem;
+border-radius: .5rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+margin-bottom: 1rem;
+background: var(--color-background);
+}
+
+#transactions{
+    display: flex;
+    margin: 1rem;
+    color: var(--color-text);
+}
+#transaction-history{
+    list-style:none;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+}
+#transaction-history li{
+   background-color:var(--color-white);
+   padding: .5rem;
+   border-radius: .55rem;
+
+   margin: .5rem .25rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+}
+#deposit-section, #spend-section{
+display: flex;
+flex-direction: row;
+gap:0.25rem;
+}
+
+#accounts{
+    width: 100%;
+}
+#accounts > button{
+    flex-direction: row;
+}
+#account-actions{
+    display: flex;
+    gap: .5rem;
+    margin-top: .5rem;
+ 
+}
+#action-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: .5rem;
+    align-items:flex-start;
+}
+#deposit-category, #spend-category{
+      border:none;
+      border-radius: .5rem;
+}

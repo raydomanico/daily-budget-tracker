@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Daily Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="current-budget-section">
+    <h3>Your Daily Budget</h3>
+    <h1 id="daily-budget">00</h1>
+  <button id ="reset-daily-budget">reset</button>
+
+</div>
+
+<div id="button-section">
+    <input type="number" id="inputBudget" name="inputBudget" placeholder="Enter Amount">
+    <p id="input-invalid-msg" style="display:none">Invalid Amount, Try again. </p>
+
+<div id="action-buttons">
+    <button id="deposit">Deposit</button>
+    <button id="spend" >Spend</button>
+</div>
+
+<div id="deposit-section">
+    <select id="deposit-category" style="display:none">
+    <option>Daily Budget</option>
+    <option>Daily Budget Savings</option>
+    <option>Salary</option>
+    <option>Others</option>
+</select>
+<button id="confirm-add-budget" style="display:none">Confirm</button>
+
+</div>
+
+<div id="spend-section">
+<select id="spend-category" style="display:none">
+    <option>Daily Budget</option>
+    <option>Daily Budget Savings</option>
+    <option>Salary</option>
+    <option>Others</option>
+</select>
+
+
+<select id="purchase-category" style="display:none">
+    <option>Foods/Drinks</option>
+    <option>Gas/Transpo</option>
+    <option>Bills</option>
+    <option>Others</option>
+</select>
+
+<input id="spend-category-name"type="text" placeholder="Specify Expenditure" style="display:none">
+<button id="confirm-spend-budget" style="display:none">Confirm</button>
+
+
+
+</div>
+</div>
+
+<div id="accounts"> 
+
+<div id="account-dashboard">
+<div class="account-card">
+    <p>Salary:</p>
+    <span id="salary">00</span>
+</div>
+<div class="account-card">
+    <p>Savings:</p>
+    <span id="daily-savings">00</span>
+</div>
+<div class="account-card">
+    <p>Others:</p>
+    <span id="others">00</span>
+</div>
+
+</div>
+<div id="account-actions">
+  <button id ="edit-budget">Edit Amounts</button>
+    <button id ="reset-all-budget">Reset All</button>
+    </div>
+</div>
+
+
+
+
+<div id="transactions">Transaction history</div>
+<ul id="transaction-history">
+
+</ul>
+</div>
+<div id="transaction-notification">
+
+</div>
+    <script src="script.js"></script>
+</body>
