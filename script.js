@@ -10,6 +10,7 @@ const inputBudgetEl=document.getElementById("inputBudget");
 const dailyBudgetEl=document.getElementById("daily-budget");
 const transactionHistoryListEl=document.getElementById("transaction-history");
 const spendCategoryEl=document.getElementById("spend-category");
+const purchaseCategoryEl=document.getElementById("purchase-category");
 const depositCategoryEl=document.getElementById("deposit-category");
 const spendCategoryNameEl=document.getElementById("spend-category-name");
 const confirmSpendBudgetEl=document.getElementById("confirm-spend-budget");
@@ -88,6 +89,7 @@ function spendBudget(){
      spendCategoryEl.style.display="block"
      spendCategoryNameEl.style.display="block"
      confirmSpendBudgetEl.style.display="block"
+     purchaseCategoryEl.style.display="block"
     
 }   
 
@@ -199,6 +201,7 @@ function hideDropdowns(){
      spendCategoryEl.style.display="none"
      depositCategoryEl.style.display="none"     
      confirmAddBudgetEl.style.display="none"
+     purchaseCategoryEl.style.display="none"
 }
 
 

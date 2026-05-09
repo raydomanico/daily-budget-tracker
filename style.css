@@ -148,6 +148,16 @@ flex-wrap: wrap;
 gap:0.25rem;
 }
 
+#spend-section select,
+#spend-section input{
+min-width:120px;
+padding:.5rem;
+outline: none;
+border: none;
+border-radius: .5rem;
+
+}
+
 #accounts{
     width: 100%;
 }
