@@ -1,3 +1,7 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+}
+
 const DAILY_LIMIT=250;
 const CATEGORY_SALARY="Salary";
 const CATEGORY_DAILY_SAVINGS="Daily Budget Savings";
